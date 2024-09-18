@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# [PROJECT NAME]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the template for a new project. It is a simple project that can be used as a starting point for a new project.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get started, you can clone this repository and start working on your project.
 
-## Expanding the ESLint configuration
+After cloning the repository, you can run the following command to install the dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+As you can see in the `package.json` file, you should have right version of Node.js installed on your machine.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```json
+{
+  "engines": {
+    "node": ">=22.8.0",
+    "npm": ">=10.8.2"
+  }
+}
 ```
+
+## Running the Project
+
+You can run the project by running the following command:
+
+```bash
+npm run dev
+```
+
+This will start the project in development mode.
+
+## Building the Project
+
+You can build the project by running the following command:
+
+```bash
+npm run build
+npm run preview # to preview the build
+```
+
+This will build the project and create a `dist` folder with the build files.
+
+## Contributing
+
+If you would like to contribute to this template, you can fork the repository and create a pull request.
