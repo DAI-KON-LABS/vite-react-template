@@ -1,6 +1,15 @@
 # [PROJECT NAME]
 
-This is the template for a new project. It is a simple project that can be used as a starting point for a new project.
+This is the template for a new project. It is a minimal project that can be used as a starting point for a new project.
+
+## Libraries
+
+This project uses the following libraries:
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Getting Started
 
